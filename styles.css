@@ -1,0 +1,153 @@
+body
+{
+    background-color: hsl(217, 54%, 11%);
+    height:100vh;
+    margin:0;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    color:hsl(215, 51%, 70%);
+    font-size:18px;
+}
+
+.main
+{
+    background-color: hsl(216, 50%, 16%);
+    height: 440px;
+    width:240px;
+    border-radius:4%;
+    position:relative;
+    left:600px;
+    top:120px;
+    padding:20px;
+    text-align: left;
+}
+
+.imgs
+{
+    height:235px;
+    width: 237.5px;
+    border-radius:5%;
+    padding-left:2.5px 5px 5px 2.5px;
+    
+}
+
+p{
+    font-size: 15px;
+}
+
+.credit
+{
+    float:left;
+
+}
+.heading 
+{
+    color:hsl(0, 0%, 100%);
+    font-weight:600;
+    padding:10px;
+    padding-left:0px;
+}
+
+.heading:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+.logo
+{
+    height: 30px;
+    width:30px;
+    border-radius:100%;
+    position: absolute;
+    bottom:20px;
+    display: inline-block;
+}
+
+hr{
+    width:95%;
+    border:none;
+    margin-top:60px;
+    border-top:0.5px solid hsl(215, 51%, 70%);
+}
+
+.attribution
+{
+    position:absolute;
+    bottom:0;
+    left:600px;
+    line-height: 2;
+    padding: 10px;
+}
+
+.credit
+{
+    font-size:.90rem;
+}
+
+.time
+{
+    font-size: 1rem;
+}
+
+
+.ti
+{
+    display: inline-block;
+    position:absolute;
+    right:20px;
+    font-size:0.8rem;    
+}
+.cr
+{
+    display: inline-block;
+    position: absolute;
+    bottom:25px;
+    left:63px;
+}
+.etf
+{
+    display: inline-block;
+    position:absolute;
+    color:hsl(178, 100%, 50%);
+    font-size:.85rem;
+}
+
+.s 
+{
+    color:hsl(0, 0%, 100%);
+}
+
+.s:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+a{
+    color:hsl(215, 51%, 70%);
+    text-decoration: none;
+}
+a:hover
+{
+    color:hsl(178, 100%, 50%);
+}
+
+.ti::before
+{    
+    content: "";
+    display: block;
+    background: url("images/icon-clock.svg") no-repeat;
+    width: 19px;
+    height:19px;
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+.etf::before
+{
+    content: "";
+    display: block;
+    background: url("images/icon-ethereum.svg") no-repeat;
+    height: 18px;
+    width: 18px;
+    float: left;
+    margin: 0 5px 0 0;
+}
+
