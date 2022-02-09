@@ -1,153 +1,106 @@
+html
+{
+    height: 100vh;
+}
+
 body
 {
-    background-color: hsl(217, 54%, 11%);
-    height:100vh;
     margin:0;
+    background-color: hsl(217, 54%, 11%);
     text-align: center;
-    font-family: 'Outfit', sans-serif;
     color:hsl(215, 51%, 70%);
-    font-size:18px;
+    font-family: 'Outfit', sans-serif;
+    font-size:1.1rem;
 }
 
 .main
 {
     background-color: hsl(216, 50%, 16%);
-    height: 440px;
-    width:240px;
-    border-radius:4%;
-    position:relative;
-    left:600px;
-    top:120px;
-    padding:20px;
+    margin:5% 41% 5%;
+    width: 18%;
+    border-radius: 5%;
+}
+
+
+@media (max-width:992px) {
+    .main{
+        width:40%; 
+        margin:5% 30%   
+    }
+}
+
+@media (max-width:576px) {
+    .main{
+        width:80%;    
+        margin:5% 10%;
+    }
+}
+
+.imgs 
+{
+    width:90%;
+    border-radius: 5%;
+    margin: 5%;
+}
+
+.heading
+{
+    font-size:1.4rem;
+    color:#fff;
+    margin-bottom:4%;
+}
+
+p
+{
+    line-height: 1.2rem;
+}
+
+.content 
+{
+    text-align: left;
+    padding-left:5%;
+}
+
+.etf 
+{
     text-align: left;
 }
 
-.imgs
+.time 
 {
-    height:235px;
-    width: 237.5px;
-    border-radius:5%;
-    padding-left:2.5px 5px 5px 2.5px;
-    
+    text-align: right;
 }
 
-p{
-    font-size: 15px;
-}
-
-.credit
+hr 
 {
-    float:left;
-
+    width:90%;
+    margin-left: 5%;
+    margin-right:5%;
 }
-.heading 
+
+.heading:hover
 {
-    color:hsl(0, 0%, 100%);
-    font-weight:600;
-    padding:10px;
-    padding-left:0px;
+    color:cyan;
 }
 
-.heading:hover{
-    color:hsl(178, 100%, 50%);
-}
-
-.logo
+.s:hover 
 {
-    height: 30px;
-    width:30px;
-    border-radius:100%;
-    position: absolute;
-    bottom:20px;
+    color:cyan;
+}
+
+.col
+{
+    position: relative;
     display: inline-block;
+    padding-bottom: 5%;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-left: 5%;
 }
 
-hr{
-    width:95%;
-    border:none;
-    margin-top:60px;
-    border-top:0.5px solid hsl(215, 51%, 70%);
-}
-
-.attribution
+.logo 
 {
-    position:absolute;
-    bottom:0;
-    left:600px;
-    line-height: 2;
-    padding: 10px;
-}
-
-.credit
-{
-    font-size:.90rem;
-}
-
-.time
-{
-    font-size: 1rem;
-}
-
-
-.ti
-{
-    display: inline-block;
-    position:absolute;
-    right:20px;
-    font-size:0.8rem;    
-}
-.cr
-{
-    display: inline-block;
-    position: absolute;
-    bottom:25px;
-    left:63px;
-}
-.etf
-{
-    display: inline-block;
-    position:absolute;
-    color:hsl(178, 100%, 50%);
-    font-size:.85rem;
-}
-
-.s 
-{
-    color:hsl(0, 0%, 100%);
-}
-
-.s:hover{
-    color:hsl(178, 100%, 50%);
-}
-
-a{
-    color:hsl(215, 51%, 70%);
-    text-decoration: none;
-}
-a:hover
-{
-    color:hsl(178, 100%, 50%);
-}
-
-.ti::before
-{    
-    content: "";
-    display: block;
-    background: url("images/icon-clock.svg") no-repeat;
-    width: 19px;
-    height:19px;
-    float: left;
-    margin: 0 5px 0 0;
-}
-
-.etf::before
-{
-    content: "";
-    display: block;
-    background: url("images/icon-ethereum.svg") no-repeat;
-    height: 18px;
-    width: 18px;
-    float: left;
-    margin: 0 5px 0 0;
+    width:12%;
+    margin-right:4%;
 }
 
